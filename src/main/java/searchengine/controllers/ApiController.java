@@ -21,4 +21,8 @@ public class ApiController {
     public ResponseEntity<StatisticsResponse> statistics() {
         return ResponseEntity.ok(statisticsService.getStatistics());
     }
+
+    public ResponseEntity<T> startindexing(){
+        return ResponseEntity.ok(indexingService.start);
+    }
 }

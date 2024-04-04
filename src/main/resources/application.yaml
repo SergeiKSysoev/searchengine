@@ -1,5 +1,19 @@
-# example values
+server:
+  port: 8080
 
+spring:
+  datasource:
+    username: root
+    password: aJ546mBh2mQeGj
+    url: jdbc:mysql://localhost:3306/search_engine?useSSL=false&requireSSL=false&allowPublicKeyRetrieval=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQL8Dialect
+    hibernate:
+        ddl-auto: update
+    show-sql: true
 indexing-settings:
   sites:
     - url: https://www.lenta.ru
@@ -8,3 +22,9 @@ indexing-settings:
       name: Skillbox
     - url: https://www.playback.ru
       name: PlayBack.Ru
+    - url:  http://radiomv.ru/
+      name: Radiomv
+    - url: https://ipfran.ru/
+      name: Ipfan.ru
+    - url: https://dimonvideo.ru/
+      name: Dimonvideo.ru

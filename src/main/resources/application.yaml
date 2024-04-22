@@ -28,3 +28,8 @@ indexing-settings:
       name: Ipfan.ru
     - url: https://dimonvideo.ru/
       name: Dimonvideo.ru
+jsoup:
+  user-agent: FunnyBot
+  referrer: http://www.google.com
+  timeout-min: 50
+  timeout-max: 150
